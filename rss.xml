@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>挽酒醉夜</title>
+        <link>https://wanjiuzuiye.github.io</link>
+        <description>悟已往之不谏，知来日之可追</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 12 Jan 2024 15:51:38 +0800</pubDate>
+        <lastBuildDate>Fri, 12 Jan 2024 15:51:38 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/01/12/hello-world/</guid>
+            <title>Hello World</title>
+            <link>https://wanjiuzuiye.github.io/2024/01/12/hello-world/</link>
+            <pubDate>Fri, 12 Jan 2024 15:51:38 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Deploy to github and coding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Local access to your blog will need to be deployed to both in order for others to access your blog through the URL. The deployment to two websites is because github is a foreign server, the access speed is relatively slow, but coding is a domestic website, the access speed is relatively fast, through DNS resolution, domestic access can be resolved to Coding, foreign resolution to Github.&lt;/p&gt;
+&lt;p&gt;Sign up for a Github account, and then create a Repository on github for storing code files.&lt;/p&gt;
+&lt;p&gt;The Repository name must be {user_name}.github.io. The repository name must be the same as your user name for page deployment.&lt;/p&gt;
+&lt;p&gt;It should be noted that there is also a _config.yml file under the downloaded theme, namely &amp;#x2F;themes&amp;#x2F;next&amp;#x2F; _confi.yml file, which is the theme configuration file, and its priority is different from that of the hexo configuration file, the priority of the hexo configuration file is &amp;gt; the priority of the theme configuration file.&lt;/p&gt;
+&lt;p&gt;hexo init generates a new blogging framework&lt;/p&gt;
+&lt;p&gt;hexo g is equivalent to hexo generate, which generates static files&lt;/p&gt;
+&lt;p&gt;hexo s is equivalent to hexo server and runs on a local server&lt;/p&gt;
+&lt;p&gt;hexo new [layout] &amp;lt; title&amp;gt;  Used to generate an article, if there is a space in the title, you need to put quotes.&lt;/p&gt;
+&lt;p&gt;hexo d is equivalent to the hexo deploy deployment website and can be merged with hexo g to form hexo D-G&lt;/p&gt;
+&lt;p&gt;hexo clean is used to clear cached files and generated static files, and can be used when the theme configuration has been changed, but the site has not changed, and then regenerate static pages.&lt;/p&gt;
+&lt;p&gt;hexo is a blog building framework that can build static content in a few seconds, equivalent to a QQ space that can customize content. To compare hexo to a room, the next theme is like a wallpaper that can be configured to be used by downloading it to the hexo folder. You can also download other themes you like to the hexo themes folder in the same way, and then change the configuration to use other themes.&lt;/p&gt;
+&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
