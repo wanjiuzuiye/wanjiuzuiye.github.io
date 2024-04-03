@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>test</title>
+    <url>/2024/04/03/test/</url>
+    <content><![CDATA[<p>测试：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a+b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客常用指令</title>
+    <url>/2024/04/02/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="hexo-butterfly主题使用方法">hexo-butterfly主题使用方法</h2>
+<ol>
+<li>
+<p>hexo基本使用方法:</p>
+</li>
+<li>
+<p>butterfly扩展功能：</p>
+<ul>
+<li>标签外挂功能:<img src="image-20240402201907915.png" alt="image-20240402201907915"></li>
+</ul>
+<img src="image-20240402202052307.png" alt="image-20240402202052307" style="zoom:80%;" />
+</li>
+</ol>
+<ul>
+<li>标签隐藏功能:可以使用该功能用来隐藏一些文字，然后通过按钮显示结果</li>
+</ul>
+<p><img src="image-20240402202340747.png" alt="image-20240402202340747"></p>
+<p><img src="image-20240402202535962.png" alt="image-20240402202535962"></p>
+<ul>
+<li>
+<p>label标记功能</p>
+<p>因为hexo的渲染限制，不建议将标签加在段落开头。使用label标记可以轻松将字段更改颜色进行强调。</p>
+<p><img src="image-20240402212433796.png" alt="image-20240402212433796"></p>
+</li>
+<li>
+<p>KaTex数学公式</p>
+<ol>
+<li>
+<p>常用的插入方式有两种：</p>
+<p>独立公式，行中公式。行中公式可以插入到一行文字中，而独立公式是单独成行。行中公式的插入方式为:<mark class="hl-label red">$...$</mark> ，独立公式为:<mark class="hl-label red">$$...$$</mark> </p>
+</li>
+<li>
+<p>常用符号：</p>
+<p>分组符号：</p>
+<p>通过分组符号把可以把一个整体括起来，当做一个整体，相当于括号</p>
+<p>上标下标：</p>
+<p>在公式的后面加上^表示上标，加上_表示下标，用{}可以将多个字符转为上下标</p>
+<p>例如：$x^i$，$x_i$</p>
+<p>输出：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">x^i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8247em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span></span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p>空格：</p>
+<p>不能直接用空格表示，用<mark class="hl-label red">\</mark> ，<mark class="hl-label red">\;</mark> <mark class="hl-label red">\quad</mark> 和<mark class="hl-label red">\qquad</mark> 充当空格，增加的间隔依次增大</p>
+<p>运算符号：</p>
+<p>加号  +，减号  -，乘号 \times，除号 \div，加减号 \pm，减加号 \mp，指数 ^</p>
+<p>例如：$ a+b-c \times e \div f \pm g \mp g $</p>
+<p>输出：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>×</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a \times b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></p>
+<p>关系运算符：</p>
+<p>小于号 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">\lt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span></span></span></span> -&gt; \lt，大于号 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&gt;</mo></mrow><annotation encoding="application/x-tex">\gt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&gt;</span></span></span></span> -&gt; \gt，小于等于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> -&gt; \le，大于等于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\ge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> -&gt; \ge，不等于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal">≠</mo></mrow><annotation encoding="application/x-tex">\neq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord"><span class="mrel"></span></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span></span></span></span> -&gt; \neq。</p>
+<p>分式：</p>
+<p>两种实现方式：</p>
+<ol>
+<li>输入：<mark class="hl-label {a+b+1}{a-b-1}">\frac</mark> ，输出：$ \frac {a+b+1}{a-b-1} $</li>
+<li>输入：<mark class="hl-label \over">{a+b+1}</mark> ，输出：$ {a+b+1} \over {a-b-1} $</li>
+</ol>
+<p>根式：</p>
+<ol>
+<li>
+<p>平方根：</p>
+<p>输入：<mark class="hl-label {a+b}">\sqrt</mark> ，输出：$ \sqrt {a+b} $</p>
+</li>
+<li>
+<p>n次方根：</p>
+<p>输入：<mark class="hl-label [n]">\sqrt</mark> ，输出：$ \sqrt [5] {a+b} $</p>
+</li>
+</ol>
+<p>特殊公式：</p>
+<ol>
+<li>
+<p>求和：</p>
+<p>输入：<mark class="hl-label {a+b}">\sum</mark> ，输出：$ \sum {a+b} $</p>
+<p>输入：<mark class="hl-label red">\sum{i=1}^{K}</mark> ，输出：$ \sum{i=1}^{K} $</p>
+</li>
+<li>
+<p>连乘：</p>
+<p>输入：<mark class="hl-label {a+b}">\prod</mark> ，输出：$ \prod {a+b} $</p>
+<p>输入：<mark class="hl-label red">\prod{i=1}^{K}</mark> ，输出：$ \prod_{i=1}^{K} $</p>
+</li>
+<li>
+<p>arg max/arg min/max/min:</p>
+<p>输入：<mark class="hl-label red">$$arg\,\max{c_k}$$</mark> ，输出：$$ arg,\max{c_k} $$</p>
+<p>输入：<mark class="hl-label red">$$arg\,\min{c_k}$$</mark> ，输出：$$ arg,\min{c_k} $$</p>
+<p>输入：<mark class="hl-label {argmin}{c_k}$$">$$\mathop</mark> ，输出：$$ \mathop {argmin}{c_k} $$</p>
+<p>输入：<mark class="hl-label {argmax}{c_k}$$">$$\mathop</mark> ，输出：$$ \mathop {argmax}{c_k} $$</p>
+<p>输入：<mark class="hl-label red">$$\max{c_k}$$</mark> ，输出：$$ \max{c_k} $$</p>
+<p>输入：<mark class="hl-label red">$$\min{c_k}$$</mark> ，输出：$$ \min{c_k} $$</p>
+</li>
+<li>
+<p>省略号：</p>
+<p>输入：<mark class="hl-label red">\cdots</mark> ，输出：$ \cdots $</p>
+<p>用于有多个变量的式子时：</p>
+<p>输入：<mark class="hl-label red">$f{x_1,x_2,\cdots,x_n}$</mark> ，输出：$ f{x_1,x_2,\cdots,x_n} $</p>
+</li>
+</ol>
+<p>独立公式：</p>
+<p>对齐，<mark class="hl-label red">\begin{aligned}</mark> 用于开头，<mark class="hl-label red">\end{aligned}</mark> 用于结尾，对齐的位置用<mark class="hl-label red">&</mark> 开始，用<mark class="hl-label red">\\\\</mark> 结束</p>
+<p>输入：$$</p>
+<p>​          \begin{aligned}</p>
+<p>​          f(x) &amp;=a+b+a\</p>
+<p>​          &amp; = 2a+b</p>
+<p>​          \end{aligned}</p>
+<p>​          $$</p>
+<p>输出：$$</p>
+<p>​          \begin{aligned}</p>
+<p>​          f(x) &amp;=a+b+a\\</p>
+<p>​          &amp; = 2a+b</p>
+<p>​          \end{aligned}</p>
+<p>​          $$</p>
+<p>条件函数：</p>
+<mark class="hl-label red">\begin{cases}</mark> 开始和<mark class="hl-label red">\end{cases}</mark> 结束，<mark class="hl-label red">\test{}</mark> 中输入内容
+<p>输入：$$</p>
+<p>​           L(Y,f(X)) =</p>
+<p>​           \begin{cases}</p>
+<p>​           0, &amp; \test{Y = f(X)} \\</p>
+<p>​           1, &amp; \test{Y <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal">≠</mo></mrow><annotation encoding="application/x-tex">\neq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord"><span class="mrel"></span></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span></span></span></span> f(X)}</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>​                         \end{cases}</p>
+<p>​                         $$</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/01/12/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
