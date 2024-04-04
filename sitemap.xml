@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wanjiuzuiye.github.io/about/index.html</loc>
+    <loc>https://wanjiuzuiye.github.io/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</loc>
     
     <lastmod>2024-04-04</lastmod>
     
@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://wanjiuzuiye.github.io/2022/08/08/%E9%BB%84%E6%B0%B4%E6%B8%B8/</loc>
+    
+    <lastmod>2024-04-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</loc>
     
     <lastmod>2024-04-04</lastmod>
@@ -29,9 +38,18 @@
   </url>
   
   <url>
-    <loc>https://wanjiuzuiye.github.io/2022/08/08/%E9%BB%84%E6%B0%B4%E6%B8%B8/</loc>
+    <loc>https://wanjiuzuiye.github.io/2024/04/04/butterfly%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
     
-    <lastmod>2024-04-03</lastmod>
+    <lastmod>2024-04-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanjiuzuiye.github.io/about/index.html</loc>
+    
+    <lastmod>2024-04-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
