@@ -7,16 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Thu, 04 Apr 2024 11:37:20 +0800</pubDate>
         <lastBuildDate>Thu, 04 Apr 2024 11:37:20 +0800</lastBuildDate>
-        <category>游记</category>
-        <category>暑假</category>
         <category>Hexo</category>
         <category>LaTex</category>
+        <category>游记</category>
+        <category>暑假</category>
+        <category>butterfly主题</category>
+        <category>扩展标签</category>
         <category>hexo</category>
         <category>博客</category>
+        <category>Typora</category>
+        <category>写作</category>
         <item>
-            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
-            <title>hexo常用指令</title>
-            <link>https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+            <title>Hexo常用指令</title>
+            <link>https://wanjiuzuiye.github.io/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
             <category>hexo</category>
             <category>博客</category>
             <pubDate>Thu, 04 Apr 2024 11:37:20 +0800</pubDate>
@@ -24,7 +28,7 @@
 &lt;p&gt;语法为：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo init [folder]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;指令运行后，会生成如下文件：&lt;/p&gt;
-&lt;img src=&#34;/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_121450.png&#34; class=&#34;&#34;&gt;
+&lt;img src=&#34;/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_121450-1712292054782-1.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;模板文件：用来存放自定义的文章模版文件，每次写作可按照模板生成初始文章。&lt;/li&gt;
 &lt;li&gt;资源文件夹：用来存放页面文件和文章文件，包括标签、分类、文章、图片等资源。&lt;/li&gt;

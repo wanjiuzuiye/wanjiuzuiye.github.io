@@ -7,23 +7,448 @@
         <language>zh-CN</language>
         <pubDate>Thu, 04 Apr 2024 16:37:34 +0800</pubDate>
         <lastBuildDate>Thu, 04 Apr 2024 16:37:34 +0800</lastBuildDate>
-        <category>游记</category>
-        <category>暑假</category>
         <category>Hexo</category>
         <category>LaTex</category>
+        <category>游记</category>
+        <category>暑假</category>
+        <category>butterfly主题</category>
+        <category>扩展标签</category>
         <category>hexo</category>
         <category>博客</category>
+        <category>Typora</category>
+        <category>写作</category>
         <item>
-            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/butterfly%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-            <title>butterfly主题扩展标签使用方法</title>
-            <link>https://wanjiuzuiye.github.io/2024/04/04/butterfly%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/Butterfly%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+            <title>Butterfly主题扩展标签使用方法</title>
+            <link>https://wanjiuzuiye.github.io/2024/04/04/Butterfly%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+            <category>butterfly主题</category>
+            <category>扩展标签</category>
             <pubDate>Thu, 04 Apr 2024 16:37:34 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;h2 id=&#34;Butterfly-标签扩展&#34;&gt;&lt;a href=&#34;#Butterfly-标签扩展&#34; class=&#34;headerlink&#34; title=&#34;Butterfly 标签扩展&#34;&gt;&lt;/a&gt;Butterfly 标签扩展&lt;/h2&gt;&lt;p&gt;标签扩展 (Tag Plugins)是 Hexo 特有的功能，不是标准的 Markdown 格式，因此不能够在 Typora中正常显示，但是通过 Hexo 渲染之后可以正常显示。通过标签扩展可以实现一些增强功能，如：字段强调、按钮隐藏、选择按钮等动能。&lt;/p&gt;
+&lt;p&gt;虽然在 &lt;a href=&#34;http://localhost:4000/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/&#34;&gt;Hexo常用指令&lt;/a&gt;中介绍了一些 Hexo 标签扩展，但是 Butterfly 主题中也内带了一些移植于 Next 主题的标签扩展。因此这篇文章就是来介绍 Butterfly 主题常用的的额外标签扩展。完整标签扩展可以拜访 &lt;a href=&#34;https://butterfly.js.org/posts/4aa8abbe/#%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B%EF%BC%88Tag-Plugins%EF%BC%89&#34;&gt;Butterfly 官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;note warning simple&#34;&gt;&lt;p&gt;虽然这些标签可以带来强大的功能，但也拥有许多限制，同时这些标签扩展在其他主题使用可能不会生效。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;Note-标签&#34;&gt;&lt;a href=&#34;#Note-标签&#34; class=&#34;headerlink&#34; title=&#34;Note 标签&#34;&gt;&lt;/a&gt;Note 标签&lt;/h3&gt;&lt;div class=&#34;tabs&#34; id=&#34;note标签&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab  active&#34; data-href=&#34;note标签-1&#34;&gt;标签通用设置&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;note标签-2&#34;&gt;用法1&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;note标签-3&#34;&gt;用法2(自定义icon)&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;note标签-1&#34;&gt;&lt;p&gt;该设置在&lt;code&gt;主题配置文件&lt;/code&gt;中&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;note:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# Note tag style values:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;#  - simple    bs-callout old alert style. Default.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;#  - modern    bs-callout new (v2-v3) alert style.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;#  - flat      flat callout style with background, like on Mozilla or StackOverflow.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;#  - disabled  disable all CSS styles import of note tag.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;style:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;simple&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;icons:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;border_radius:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# Offset also applied to label tag variables. This option can work with disabled note tag.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;light_bg_offset:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Note 标签有两种用法&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;icons&lt;/code&gt; 和 &lt;code&gt;light_bg_offset&lt;/code&gt; 只对第一种用法有效&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;note标签-2&#34;&gt;&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note [class] [no-icon] [style] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Any content (support inline tags too.io).&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;class&lt;/td&gt;
+&lt;td&gt;可选参数，不同的类别有不同的颜色&lt;br /&gt;( default / primary / success / info / warning / danger)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;no-icon&lt;/td&gt;
+&lt;td&gt;可选参数，不显示 icon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;style&lt;/td&gt;
+&lt;td&gt;可选参数，可以覆盖设置中的默认 style&lt;br /&gt;( simple / modern / flat / disabled )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;style - simple&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;默认 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note default simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;default 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note primary simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;primary 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note success simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;success 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note info simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;info 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note warning simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;warning 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note danger simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;danger 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;note simple&#34;&gt;&lt;p&gt;默认 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note default simple&#34;&gt;&lt;p&gt;default 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note primary simple&#34;&gt;&lt;p&gt;primary 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note success simple&#34;&gt;&lt;p&gt;success 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info simple&#34;&gt;&lt;p&gt;info 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning simple&#34;&gt;&lt;p&gt;warning 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note danger simple&#34;&gt;&lt;p&gt;danger 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;style - modern&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;默认 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note default modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;default 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note primary modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;primary 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note success modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;success 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note info modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;info 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note warning modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;warning 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note danger modern %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;danger 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;note modern&#34;&gt;&lt;p&gt;默认 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note default modern&#34;&gt;&lt;p&gt;default 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note primary modern&#34;&gt;&lt;p&gt;primary 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note success modern&#34;&gt;&lt;p&gt;success 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info modern&#34;&gt;&lt;p&gt;info 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning modern&#34;&gt;&lt;p&gt;warning 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note danger modern&#34;&gt;&lt;p&gt;danger 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;style - flat&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;默认 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note default flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;default 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note primary flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;primary 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note success flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;success 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note info flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;info 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note warning flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;warning 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note danger flat %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;danger 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;note flat&#34;&gt;&lt;p&gt;默认 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note default flat&#34;&gt;&lt;p&gt;default 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note primary flat&#34;&gt;&lt;p&gt;primary 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note success flat&#34;&gt;&lt;p&gt;success 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;info 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;warning 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note danger flat&#34;&gt;&lt;p&gt;danger 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;style - disabled&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;默认 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note default disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;default 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note primary disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;primary 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note success disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;success 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note info disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;info 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note warning disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;warning 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note danger disabled %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;danger 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;note disabled&#34;&gt;&lt;p&gt;默认 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note default disabled&#34;&gt;&lt;p&gt;default 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note primary disabled&#34;&gt;&lt;p&gt;primary 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note success disabled&#34;&gt;&lt;p&gt;success 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info disabled&#34;&gt;&lt;p&gt;info 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note warning disabled&#34;&gt;&lt;p&gt;warning 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note danger disabled&#34;&gt;&lt;p&gt;danger 提示块标签&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;no-icon 设置&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;默认 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note default no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;default 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note primary no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;primary 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note success no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;success 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note info no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;info 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note warning no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;warning 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note danger no-icon %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;danger 提示块标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;note标签-3&#34;&gt;&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note [color] [icon] [style] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Any content (support inline tags too.io).&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td&gt;可选参数，提示块的颜色&lt;br /&gt;( default / blue / pink / red / purple / orange / green )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;icon&lt;/td&gt;
+&lt;td&gt;可选参数，可配置自定的 icon，只支持 fontawesome 图标或者 no-icon。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;style&lt;/td&gt;
+&lt;td&gt;可选参数，可以覆盖设置中的默认 style&lt;br /&gt;( simple / moder / flat / disabled )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;style - simple 的自定义 颜色与 icon&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note &amp;#x27;fab fa-cc-visa&amp;#x27; simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;你是刷 Visa 还是 UnionPay&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note blue &amp;#x27;fas fa-bullhorn&amp;#x27; simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2024年到了....&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note pink &amp;#x27;fas fa-car-crash&amp;#x27; simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;小心开车 安全至上&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note red &amp;#x27;fas fa-fan&amp;#x27; simple%&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;这是三片呢？还是四片？&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note orange &amp;#x27;fas fa-battery-half&amp;#x27; simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;你是刷 Visa 还是 UnionPay&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note purple &amp;#x27;far fa-hand-scissors&amp;#x27; simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;剪刀石头布&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% note green &amp;#x27;fab fa-internet-explorer&amp;#x27; simple %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;前端最讨厌的浏览器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endnote %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;note icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon fab fa-cc-visa&#34;&gt;&lt;/i&gt;&lt;p&gt;你是刷 Visa 还是 UnionPay&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note blue icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon fas fa-bullhorn&#34;&gt;&lt;/i&gt;&lt;p&gt;2024年到了….&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note pink icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon fas fa-car-crash&#34;&gt;&lt;/i&gt;&lt;p&gt;小心开车 安全至上&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note red icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon fas fa-fan&#34;&gt;&lt;/i&gt;&lt;p&gt;这是三片呢？还是四片？&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note orange icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon fas fa-battery-half&#34;&gt;&lt;/i&gt;&lt;p&gt;你是刷 Visa 还是 UnionPay&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note purple icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon far fa-hand-scissors&#34;&gt;&lt;/i&gt;&lt;p&gt;剪刀石头布&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note green icon-padding simple&#34;&gt;&lt;i class=&#34;note-icon fab fa-internet-explorer&#34;&gt;&lt;/i&gt;&lt;p&gt;前端最讨厌的浏览器&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;Tag-hide-标签&#34;&gt;&lt;a href=&#34;#Tag-hide-标签&#34; class=&#34;headerlink&#34; title=&#34;Tag-hide 标签&#34;&gt;&lt;/a&gt;Tag-hide 标签&lt;/h3&gt;&lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;Butterfly 的作者不建议在 Tag-hide 标签中放入 h1~h6 标题。因为 Toc 目录会把隐藏的标题给显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致 Toc 的滚动出现异常。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Tag-hide 标签适合用来把一些文字，内容隐藏起来，并且可以通过按钮点击显示，主要有三种用法：&lt;/p&gt;
+&lt;div class=&#34;tabs&#34; id=&#34;tag-hide标签&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab  active&#34; data-href=&#34;tag-hide标签-1&#34;&gt;Inline用法&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;tag-hide标签-2&#34;&gt;Block用法&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;tag-hide标签-3&#34;&gt;Toggle用法&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;tag-hide标签-1&#34;&gt;&lt;p&gt;&lt;code&gt;Inline&lt;/code&gt; 只能够在文本里面添加隐藏按钮，只能隐藏文本，并且文本不能包含英文逗号，可以使用 &lt;code&gt;&amp;amp;sbquo;&lt;/code&gt; 来代替。&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% hideInline content,display,bg,color %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;要隐藏的文本内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;display&lt;/td&gt;
+&lt;td&gt;可选参数，按钮的文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bg&lt;/td&gt;
+&lt;td&gt;可选参数，按钮的背景颜色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td&gt;可选参数，按钮文字的颜色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1 + 1 等于多少？ &amp;#123;% hideInline 等于2,查看答案,#FF7242,#fff %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;门前大桥下 &amp;#123;% hideInline 游过一群鸭 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;1 + 1 等于多少？ &lt;span class=&#34;hide-inline&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;hide-button&#34; style=&#34;background-color: #FF7242;color: #fff&#34;&gt;查看答案
+  &lt;/button&gt;&lt;span class=&#34;hide-content&#34;&gt;等于2&lt;/span&gt;&amp;lt;/span&amp;gt;&lt;br&gt;门前大桥下 &lt;span class=&#34;hide-inline&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;hide-button&#34; style=&#34;&#34;&gt;Click
+  &lt;/button&gt;&lt;span class=&#34;hide-content&#34;&gt;游过一群鸭&lt;/span&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;tag-hide标签-2&#34;&gt;&lt;p&gt;&lt;code&gt;block&lt;/code&gt; 可以用来隐藏很多内容，如：代码块，图片等&lt;/p&gt;
+&lt;p&gt;( display中不能包含英文符号，可以用&lt;code&gt;&amp;amp;sbquo;&lt;/code&gt; 代替)&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% hideBlock display,bg,color %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;content&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endhideBlock %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;要隐藏的文本内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;display&lt;/td&gt;
+&lt;td&gt;可选参数，按钮的文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bg&lt;/td&gt;
+&lt;td&gt;可选参数，按钮的背景颜色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td&gt;可选参数，按钮文字的颜色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;问世间情为何物&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% hideBlock 查看答案 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endhideBlock %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;问世间情为何物&lt;/p&gt;
+&lt;div class=&#34;hide-block&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;hide-button&#34; style=&#34;&#34;&gt;查看答案
+    &lt;/button&gt;&lt;div class=&#34;hide-content&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;tag-hide标签-3&#34;&gt;&lt;p&gt;如果展示的内容很多，可以把这些内容隐藏在收缩框里，需要时再展开&lt;/p&gt;
+&lt;p&gt;(display 不能包含英文逗号，可用 &lt;code&gt;&amp;amp;sbquo;&lt;/code&gt; 代替)&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% hideToggle display,bg,color %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;content&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endhideToggle %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% hideToggle 春江花月夜 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;江天一色无纤尘，皎皎空中孤月轮。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;江畔何人初见月？江月何年初照人？&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;人生代代无穷已，江月年年望相似。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;不知江月待何人，但见长江送流水。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;白云一片去悠悠，青枫浦上不胜愁。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;谁家今夜扁舟子？何处相思明月楼？ &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endhideToggle %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;details class=&#34;toggle&#34; &gt;&lt;summary class=&#34;toggle-button&#34; style=&#34;&#34;&gt;春江花月夜&lt;/summary&gt;&lt;div class=&#34;toggle-content&#34;&gt;&lt;p&gt;江天一色无纤尘，皎皎空中孤月轮。&lt;/p&gt;
+&lt;p&gt;江畔何人初见月？江月何年初照人？&lt;/p&gt;
+&lt;p&gt;人生代代无穷已，江月年年望相似。&lt;/p&gt;
+&lt;p&gt;不知江月待何人，但见长江送流水。&lt;/p&gt;
+&lt;p&gt;白云一片去悠悠，青枫浦上不胜愁。&lt;/p&gt;
+&lt;p&gt;谁家今夜扁舟子？何处相思明月楼？ &lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;Mermaid-标签&#34;&gt;&lt;a href=&#34;#Mermaid-标签&#34; class=&#34;headerlink&#34; title=&#34;Mermaid 标签&#34;&gt;&lt;/a&gt;Mermaid 标签&lt;/h3&gt;&lt;p&gt;使用 Mermaid 标签可以绘制流程图、时序图、类别图、状态图等图像。具体可以查看 &lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;mermaid文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;主题配置文件&lt;/code&gt;中默认设置：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# mermaid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# see https://github.com/mermaid-js/mermaid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;mermaid:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;# built-in themes: default/forest/dark/neutral&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;theme:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;light:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;default&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;dark&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% mermaid %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;content&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endmermaid %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% mermaid %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pie&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;    title Key elements in Product X&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;    &amp;quot;Calcium&amp;quot; : 42.96&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;    &amp;quot;Potassium&amp;quot; : 50.05&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;    &amp;quot;Magnesium&amp;quot; : 10.01&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;    &amp;quot;Iron&amp;quot; :  5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;&amp;#123;% endmermaid %&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;mermaid-wrap&#34;&gt;&lt;pre class=&#34;mermaid-src&#34; hidden&gt;
+  pie
+    title Key elements in Product X
+    &amp;quot;Calcium&amp;quot; : 42.96
+    &amp;quot;Potassium&amp;quot; : 50.05
+    &amp;quot;Magnesium&amp;quot; : 10.01
+    &amp;quot;Iron&amp;quot; :  5
+  &lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;Tabs-标签&#34;&gt;&lt;a href=&#34;#Tabs-标签&#34; class=&#34;headerlink&#34; title=&#34;Tabs 标签&#34;&gt;&lt;/a&gt;Tabs 标签&lt;/h3&gt;&lt;p&gt;Tab 标签移植于 Next 主题&lt;/p&gt;
+&lt;p&gt;使用方法&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% tabs Unique name, [index] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab [Tab caption] [@icon] --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Any content (support inline tags too).&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtabs %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;[Unique name]&lt;/td&gt;
+&lt;td&gt;用来标明每个&lt;code&gt;选项&lt;/code&gt;的前缀名，与 [index] 组成&lt;code&gt;选项名&lt;/code&gt;。名称在当前文章/页面是唯一的，不能包含逗号，并且空格会被替换为短横线。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[index]&lt;/td&gt;
+&lt;td&gt;可选参数，用来指定默认激活的&lt;code&gt;选项&lt;/code&gt;的索引值。默认选择第一个&lt;code&gt;选项&lt;/code&gt;，若值为 -1 则不会指定任何&lt;code&gt;选项&lt;/code&gt;。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[Tab caption]&lt;/td&gt;
+&lt;td&gt;可选参数，用来指定当前&lt;code&gt;选项&lt;/code&gt;的的标题名，如果未设置，就会使用 [Unique name] + 索引值的方式为每一个&lt;code&gt;选项&lt;/code&gt;设置标题名。如果设置了图标，则标题会空。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[@icon]&lt;/td&gt;
+&lt;td&gt;可选参数，用图标来代替&lt;code&gt;选项&lt;/code&gt;名，要指定 FontAwesome 图标名称，可以包含空格也可不包含空格。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;测试1 - 参数使用默认设置&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% tabs test1 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 1.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 2.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 3.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtabs %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;tabs&#34; id=&#34;test1&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab  active&#34; data-href=&#34;test1-1&#34;&gt;test1 1&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test1-2&#34;&gt;test1 2&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test1-3&#34;&gt;test1 3&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;test1-1&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 1.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test1-2&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 2.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test1-3&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 3.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;测试2 - [index] 参数指定索引值&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% tabs test2, 2 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 1.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 2.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 3.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtabs %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;tabs&#34; id=&#34;test2&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test2-1&#34;&gt;test2 1&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test2-2&#34;&gt;test2 2&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab  active&#34; data-href=&#34;test2-3&#34;&gt;test2 3&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test2-1&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 1.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test2-2&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 2.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;test2-3&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 3.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;可以看见此时默认激活的&lt;code&gt;选项&lt;/code&gt;为第二个&lt;/p&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;测试3 - [index] 值使用 -1&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% tabs test3, -1 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 1.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 2.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 3.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtabs %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;tabs&#34; id=&#34;test3&#34;&gt;&lt;ul class=&#34;nav-tabs no-default&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test3-1&#34;&gt;test3 1&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test3-2&#34;&gt;test3 2&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test3-3&#34;&gt;test3 3&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test3-1&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 1.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test3-2&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 2.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test3-3&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 3.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;可以看到，此时默认是不会打开任何&lt;code&gt;选项栏&lt;/code&gt;的&lt;/p&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;测试4 - 指定 [Tab caption] 值&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% tabs test4 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab 1 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 1.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab 2 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 2.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab 3 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**This is Tab 3.**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtabs %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;tabs&#34; id=&#34;test4&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab  active&#34; data-href=&#34;test4-1&#34;&gt;1&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test4-2&#34;&gt;2&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test4-3&#34;&gt;3&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;test4-1&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 1.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test4-2&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 2.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test4-3&#34;&gt;&lt;p&gt;&lt;strong&gt;This is Tab 3.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;可以看到，此时每个&lt;code&gt;选项&lt;/code&gt;的名称都改为设定的值。&lt;/p&gt;
+&lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;测试5 - 指定 [@icon] 值&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% tabs test5 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab 第一個Tab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**tab名字為第一个Tab**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab @fab fa-apple-pay --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**只有图标 沒有Tab名字**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- tab 炸弹@fas fa-bomb --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;strong&#34;&gt;**名字+icon**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtab --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtabs %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;tabs&#34; id=&#34;test5&#34;&gt;&lt;ul class=&#34;nav-tabs&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;tab  active&#34; data-href=&#34;test5-1&#34;&gt;第一个Tab&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test5-2&#34;&gt;&lt;i class=&#34;fab fa-apple-pay&#34; style=&#34;text-align: center;&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; class=&#34;tab &#34; data-href=&#34;test5-3&#34;&gt;&lt;i class=&#34;fas fa-bomb&#34;&gt;&lt;/i&gt;炸弹&lt;/button&gt;&lt;/ul&gt;&lt;div class=&#34;tab-contents&#34;&gt;&lt;div class=&#34;tab-item-content active&#34; id=&#34;test5-1&#34;&gt;&lt;p&gt;&lt;strong&gt;tab 名字为第一个Tab&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test5-2&#34;&gt;&lt;p&gt;&lt;strong&gt;只有图标 沒有Tab名字&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&#34;tab-item-content&#34; id=&#34;test5-3&#34;&gt;&lt;p&gt;&lt;strong&gt;名字+icon&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;tab-to-top&#34;&gt;&lt;button type=&#34;button&#34; aria-label=&#34;scroll to top&#34;&gt;&lt;i class=&#34;fas fa-arrow-up&#34;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;可以看出，选项的名称可以只有名字、只有图标组成，也可以名字和图标组合组成。&lt;/p&gt;
+&lt;h3 id=&#34;Button-标签&#34;&gt;&lt;a href=&#34;#Button-标签&#34; class=&#34;headerlink&#34; title=&#34;Button 标签&#34;&gt;&lt;/a&gt;Button 标签&lt;/h3&gt;&lt;p&gt;该标签用来为设置一个链接按钮&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% btn [url],[text],[icon],[color] [style] [layout] [position] [size] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[url]         : 链接&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[text]        : 按钮文字&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[icon]        : [可选] 图标&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[color]       : [可选] 按钮背景颜色(默认style时）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;                      按钮字体和边框颜色(outline时)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;                      default/blue/pink/red/purple/orange/green&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;[style]       : [可选] 按钮样式 默认实心&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;                      outline/留空&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;[layout]      : [可选] 默认布局 默认为line&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;                      block/留空&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;[position]    : [可选] 按钮位置 前提是设置了layout为block 默认为左边&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;                      center/right/留空&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;[size]        : [可选] 按钮大小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;code&#34;&gt;                      larger/留空&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;This is baidu website, click the button &amp;#123;% btn &amp;#x27;https://www.baidu.com&amp;#x27;,BaiDu %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;This is baidu website, click the button &amp;#123;% btn &amp;#x27;https://www.baidu.com&amp;#x27;,BaiDu,far fa-hand-point-right %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;This is baidu website, click the button &amp;#123;% btn &amp;#x27;https://www.baidu.com&amp;#x27;,BaiDu,,outline %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;This is baidu website, click the button &amp;#123;% btn &amp;#x27;https://www.baidu.com&amp;#x27;,BaiDu,far fa-hand-point-right,outline %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;This is baidu website, click the button &amp;#123;% btn &amp;#x27;https://www.baidu.com&amp;#x27;,BaiDu,far fa-hand-point-right,larger %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;This is baidu website, click the button &lt;a class=&#34;btn-beautify &#34; href=&#34;https://www.baidu.com&#34; 
+  title=&#34;BaiDu&#34;&gt;&lt;span&gt;BaiDu&lt;/span&gt;&lt;/a&gt;&lt;br&gt;This is baidu website, click the button &lt;a class=&#34;btn-beautify &#34; href=&#34;https://www.baidu.com&#34; 
+  title=&#34;BaiDu&#34;&gt;&lt;i class=&#34;far fa-hand-point-right&#34;&gt;&lt;/i&gt;&lt;span&gt;BaiDu&lt;/span&gt;&lt;/a&gt;&lt;br&gt;This is baidu website, click the button &lt;a class=&#34;btn-beautify outline&#34; href=&#34;https://www.baidu.com&#34; 
+  title=&#34;BaiDu&#34;&gt;&lt;span&gt;BaiDu&lt;/span&gt;&lt;/a&gt;&lt;br&gt;This is baidu website, click the button &lt;a class=&#34;btn-beautify outline&#34; href=&#34;https://www.baidu.com&#34; 
+  title=&#34;BaiDu&#34;&gt;&lt;i class=&#34;far fa-hand-point-right&#34;&gt;&lt;/i&gt;&lt;span&gt;BaiDu&lt;/span&gt;&lt;/a&gt;&lt;br&gt;This is baidu website, click the button &lt;a class=&#34;btn-beautify larger&#34; href=&#34;https://www.baidu.com&#34; 
+  title=&#34;BaiDu&#34;&gt;&lt;i class=&#34;far fa-hand-point-right&#34;&gt;&lt;/i&gt;&lt;span&gt;BaiDu&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Label-标签&#34;&gt;&lt;a href=&#34;#Label-标签&#34; class=&#34;headerlink&#34; title=&#34;Label 标签&#34;&gt;&lt;/a&gt;Label 标签&lt;/h3&gt;&lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;由于 hexo 的渲染限制，Butterfly 作者建议不要在段落开头使用 Label 标签，否则可能出现无法换行的问题。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;#123;% label text color %&amp;#125;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;文字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td&gt;可选参数，背景颜色，默认为default&lt;br /&gt;( default / blue / pink / red / purple / orange / green )&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;披绣闼，俯&amp;#123;% label 雕甍 %&amp;#125;，山原旷其盈视，川泽纡其骇瞩。&amp;#123;% label 闾阎扑地 pink %&amp;#125;，钟鸣鼎食之家；舸舰弥津，&amp;#123;% label 青雀黄龙 blue %&amp;#125;之舳。&amp;#123;% label 云销雨霁 red %&amp;#125;，彩彻区明。&amp;#123;% label 落霞  与孤鹜齐飞 purple %&amp;#125;，&amp;#123;% label 秋水共长天一色 orange %&amp;#125;。&amp;#123;% label 渔舟 green %&amp;#125;唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。 &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;披绣闼，俯&lt;mark class=&#34;hl-label default&#34;&gt;雕甍&lt;/mark&gt; ，山原旷其盈视，川泽纡其骇瞩。&lt;mark class=&#34;hl-label pink&#34;&gt;闾阎扑地&lt;/mark&gt; ，钟鸣鼎食之家；舸舰弥津，&lt;mark class=&#34;hl-label blue&#34;&gt;青雀黄龙&lt;/mark&gt; 之舳。&lt;mark class=&#34;hl-label red&#34;&gt;云销雨霁&lt;/mark&gt; ，彩彻区明。&lt;mark class=&#34;hl-label purple&#34;&gt;落霞与孤鹜齐飞&lt;/mark&gt; ，&lt;mark class=&#34;hl-label orange&#34;&gt;秋水共长天一色&lt;/mark&gt; 。&lt;mark class=&#34;hl-label green&#34;&gt;渔舟&lt;/mark&gt; 唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。 &lt;/p&gt;
+&lt;h3 id=&#34;Timeline-标签&#34;&gt;&lt;a href=&#34;#Timeline-标签&#34; class=&#34;headerlink&#34; title=&#34;Timeline 标签&#34;&gt;&lt;/a&gt;Timeline 标签&lt;/h3&gt;&lt;p&gt;用法：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% timeline title,color %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline title --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;xxxxx&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline title --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;xxxxx&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtimeline %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;标题 / 时间线&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td&gt;timeline 颜色&lt;br /&gt;default / blue / pink / red / purple / orange / green&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;示例:&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% timeline 2024 %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline 01-01 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第一&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline 01-02 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第二&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline 01-03 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第三&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline 01-04 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第四&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline 01-05 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第五&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- timeline 01-06 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第六&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- endtimeline --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endtimeline %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&#34;timeline undefined&#34;&gt;&lt;div class=&#39;timeline-item headline&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;2024&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;01-01&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item-content&#39;&gt;&lt;p&gt;第一&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;01-02&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item-content&#39;&gt;&lt;p&gt;第二&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;01-03&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item-content&#39;&gt;&lt;p&gt;第三&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;01-04&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item-content&#39;&gt;&lt;p&gt;第四&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;01-05&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item-content&#39;&gt;&lt;p&gt;第五&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item&#39;&gt;&lt;div class=&#39;timeline-item-title&#39;&gt;&lt;div class=&#39;item-circle&#39;&gt;&lt;p&gt;01-06&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;timeline-item-content&#39;&gt;&lt;p&gt;第六&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
             <title>Typora常用指令</title>
             <link>https://wanjiuzuiye.github.io/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+            <category>博客</category>
+            <category>Typora</category>
+            <category>写作</category>
             <pubDate>Thu, 04 Apr 2024 16:36:54 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;Typora教程&#34;&gt;&lt;a href=&#34;#Typora教程&#34; class=&#34;headerlink&#34; title=&#34;Typora教程&#34;&gt;&lt;/a&gt;Typora教程&lt;/h2&gt;&lt;p&gt;Typora是一款简洁而强大的 Markdown 编辑器。它提供实时预览功能，让用户可以即时查看文档的渲染效果。&lt;/p&gt;
 &lt;p&gt;最初使用 Typora 是为了利用 markdown 写博客文章，但随着对于 Typora 的使用。发现 Typora 在日常笔记、记录过程相当好用，具体体现在：逻辑性较强的层次结构，功能多样的快捷键，简洁好看。&lt;/p&gt;
@@ -191,9 +616,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
-            <title>hexo常用指令</title>
-            <link>https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+            <title>Hexo常用指令</title>
+            <link>https://wanjiuzuiye.github.io/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
             <category>hexo</category>
             <category>博客</category>
             <pubDate>Thu, 04 Apr 2024 11:37:20 +0800</pubDate>
@@ -201,7 +626,7 @@
 &lt;p&gt;语法为：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo init [folder]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;指令运行后，会生成如下文件：&lt;/p&gt;
-&lt;img src=&#34;/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_121450.png&#34; class=&#34;&#34;&gt;
+&lt;img src=&#34;/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_121450-1712292054782-1.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;模板文件：用来存放自定义的文章模版文件，每次写作可按照模板生成初始文章。&lt;/li&gt;
 &lt;li&gt;资源文件夹：用来存放页面文件和文章文件，包括标签、分类、文章、图片等资源。&lt;/li&gt;

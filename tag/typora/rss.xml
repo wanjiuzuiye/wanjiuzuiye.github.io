@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>挽酒醉夜 • Posts by &#34;typora&#34; tag</title>
+        <link>https://wanjiuzuiye.github.io</link>
+        <description>悟已往之不谏，知来日之可追</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 04 Apr 2024 16:36:54 +0800</pubDate>
+        <lastBuildDate>Thu, 04 Apr 2024 16:36:54 +0800</lastBuildDate>
+        <category>Hexo</category>
+        <category>LaTex</category>
+        <category>游记</category>
+        <category>暑假</category>
+        <category>butterfly主题</category>
+        <category>扩展标签</category>
+        <category>hexo</category>
+        <category>博客</category>
+        <category>Typora</category>
+        <category>写作</category>
+        <item>
+            <guid isPermalink="true">https://wanjiuzuiye.github.io/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+            <title>Typora常用指令</title>
+            <link>https://wanjiuzuiye.github.io/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+            <category>博客</category>
+            <category>Typora</category>
+            <category>写作</category>
+            <pubDate>Thu, 04 Apr 2024 16:36:54 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Typora教程&#34;&gt;&lt;a href=&#34;#Typora教程&#34; class=&#34;headerlink&#34; title=&#34;Typora教程&#34;&gt;&lt;/a&gt;Typora教程&lt;/h2&gt;&lt;p&gt;Typora是一款简洁而强大的 Markdown 编辑器。它提供实时预览功能，让用户可以即时查看文档的渲染效果。&lt;/p&gt;
+&lt;p&gt;最初使用 Typora 是为了利用 markdown 写博客文章，但随着对于 Typora 的使用。发现 Typora 在日常笔记、记录过程相当好用，具体体现在：逻辑性较强的层次结构，功能多样的快捷键，简洁好看。&lt;/p&gt;
+&lt;p&gt;逻辑性体现在于 Typora 的大小标题、列表等元素上。这些大小标题、列表的组合可以迅速的构建起一个顺序、层次的文章结构。不但可以使得文章的思路清晰了然，也可以在写文章的时候锻炼写作的逻辑思维能力。&lt;/p&gt;
+&lt;img src=&#34;/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_171428.png&#34; class=&#34;&#34; title=&#34;文章结构图&#34;&gt;
+&lt;p&gt;Typora 的几乎所有常用功能都可以使用快捷键实现，如：ctrl + 1~6 可以快速生成6种不同级别的标题，ctrl + shift + ~ 来生成一个代码行，ctrl + shift + k 来生成一个代码块。&lt;/p&gt;
+&lt;p&gt;学习下面教程之前需要修改Typora-&amp;gt;文件-&amp;gt;偏好设置中的部分设置：&lt;/p&gt;
+&lt;img src=&#34;/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_172446.png&#34; class=&#34;&#34; title=&#34;Typora设置&#34;&gt;
+&lt;h3 id=&#34;标题：&#34;&gt;&lt;a href=&#34;#标题：&#34; class=&#34;headerlink&#34; title=&#34;标题：&#34;&gt;&lt;/a&gt;标题：&lt;/h3&gt;&lt;p&gt;一级标题：选中文字按 Ctrl + 1 或 # +文字 &lt;/p&gt;
+&lt;p&gt;二级标题：Ctrl + 2 或 ## + 文字&lt;/p&gt;
+&lt;p&gt;三级标题：Ctrl + 3 或 ### + 文字&lt;/p&gt;
+&lt;p&gt;四级标题：Ctrl + 4 或 #### + 文字&lt;/p&gt;
+&lt;p&gt;五级标题：Ctrl + 5 或 ##### + 文字&lt;/p&gt;
+&lt;p&gt;六级标题：Ctrl + 6 或 ###### + 文字&lt;/p&gt;
+&lt;p&gt;一般来说，Typora的标题都是靠左的，想要居中的话需要利用 html 标签：&lt;center&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;center&amp;gt; 居中标题 &amp;lt;/center&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;center&gt; 居中标题 &lt;/center&gt;
+
+
+
+&lt;h3 id=&#34;文字：&#34;&gt;&lt;a href=&#34;#文字：&#34; class=&#34;headerlink&#34; title=&#34;文字：&#34;&gt;&lt;/a&gt;文字：&lt;/h3&gt;&lt;p&gt;&lt;del&gt;删除线&lt;/del&gt;：Alt + shift + 5 或 ~~文字~~&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加粗&lt;/strong&gt;：Ctrl + b 或 **文字** &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;斜体&lt;/em&gt;：Ctrl + i 或 *文字*&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;下划线&lt;/u&gt;：Ctrl + u&lt;/p&gt;
+&lt;p&gt;高亮：==文字== (博客上无法正常显示，但是 Typora 上能正常显示)&lt;/p&gt;
+&lt;h3 id=&#34;图片：&#34;&gt;&lt;a href=&#34;#图片：&#34; class=&#34;headerlink&#34; title=&#34;图片：&#34;&gt;&lt;/a&gt;图片：&lt;/h3&gt;&lt;p&gt;使用 Typora 插入图片的时候，推荐修改如下设置：&lt;/p&gt;
+&lt;p&gt;使用该设置，可以使得把图片直接粘贴进 Typora 文档中或使用其他路径的图片时，会自动把图片下载到该文档的目录下。若设置完，hexo 博客无法正常显示图片，请使用 &lt;code&gt;npm install hexo-asset-img&lt;/code&gt;下载 img 依赖尝试解决。&lt;/p&gt;
+&lt;img src=&#34;/2024/04/04/Typora%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_222116.png&#34; class=&#34;&#34; title=&#34;推荐图片设置&#34;&gt;
+&lt;p&gt;插入图片的语法格式：![描述信息](图片路径)&lt;/p&gt;
+&lt;p&gt;如：![图1](D:\blog_post\Typora教程.jpg)&lt;/p&gt;
+&lt;p&gt;快捷键：Ctrl + K 得到 &lt;a href=&#34;&#34;&gt;&lt;/a&gt;，前面加上 ! 即可&lt;/p&gt;
+&lt;h3 id=&#34;列表：&#34;&gt;&lt;a href=&#34;#列表：&#34; class=&#34;headerlink&#34; title=&#34;列表：&#34;&gt;&lt;/a&gt;列表：&lt;/h3&gt;&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ctrl + shift + [&lt;/li&gt;
+&lt;li&gt;数字&lt;mark class=&#34;hl-label red&#34;&gt;.&lt;/mark&gt;  + 空格&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;无序列表：&#34;&gt;&lt;a href=&#34;#无序列表：&#34; class=&#34;headerlink&#34; title=&#34;无序列表：&#34;&gt;&lt;/a&gt;无序列表：&lt;/h3&gt;&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Ctrl + shift + ]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;- + 空格&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;表格：&#34;&gt;&lt;a href=&#34;#表格：&#34; class=&#34;headerlink&#34; title=&#34;表格：&#34;&gt;&lt;/a&gt;表格：&lt;/h3&gt;&lt;p&gt;快捷键：Ctrl + t&lt;/p&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;段落&lt;/td&gt;
+&lt;td&gt;一到六级标题：Ctrl + 1~6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;文字&lt;/td&gt;
+&lt;td&gt;加粗：Ctrl + b，斜体：Ctrl + i，下划线：Ctrl + u，删除线：Alt + shift + 5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;图片&lt;/td&gt;
+&lt;td&gt;Ctrl + K，前面补 ！&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有序列表&lt;/td&gt;
+&lt;td&gt;Ctrl + shift + [ 或 1. + 空格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无序列表&lt;/td&gt;
+&lt;td&gt;Ctrl + shift + ] 或 - + 空格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;代码块：&#34;&gt;&lt;a href=&#34;#代码块：&#34; class=&#34;headerlink&#34; title=&#34;代码块：&#34;&gt;&lt;/a&gt;代码块：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&#34;插入单行代码：&#34;&gt;&lt;a href=&#34;#插入单行代码：&#34; class=&#34;headerlink&#34; title=&#34;插入单行代码：&#34;&gt;&lt;/a&gt;插入单行代码：&lt;/h4&gt;&lt;p&gt;快捷键 Ctrl + shift + 或用 `代码`&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;输入：&lt;/p&gt;
+&lt;p&gt;` print(“这是单行代码”) `&lt;/p&gt;
+&lt;p&gt;输出：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;print(&#34;这是单行代码&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h4 id=&#34;插入不确定编程语言代码块：&#34;&gt;&lt;a href=&#34;#插入不确定编程语言代码块：&#34; class=&#34;headerlink&#34; title=&#34;插入不确定编程语言代码块：&#34;&gt;&lt;/a&gt;插入不确定编程语言代码块：&lt;/h4&gt;&lt;p&gt;快捷键：Ctrl + shift + k 会生成一个代码块&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;printf(&#34;这不是python&#34;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h4 id=&#34;插入确定变成语言代码块：&#34;&gt;&lt;a href=&#34;#插入确定变成语言代码块：&#34; class=&#34;headerlink&#34; title=&#34;插入确定变成语言代码块：&#34;&gt;&lt;/a&gt;插入确定变成语言代码块：&lt;/h4&gt;&lt;p&gt;快捷键：```语言名称 + 回车&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;```C + 回车插入 C 代码块&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```python + 回车插入 python 代码块&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输出：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; numpy &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; np&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;链接：&#34;&gt;&lt;a href=&#34;#链接：&#34; class=&#34;headerlink&#34; title=&#34;链接：&#34;&gt;&lt;/a&gt;链接：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h4 id=&#34;外部链接—超链接：&#34;&gt;&lt;a href=&#34;#外部链接—超链接：&#34; class=&#34;headerlink&#34; title=&#34;外部链接—超链接：&#34;&gt;&lt;/a&gt;外部链接—超链接：&lt;/h4&gt;&lt;p&gt;用于跳转到其他页面的链接，格式：&lt;/p&gt;
+&lt;p&gt;[提示文字](网址)&lt;/p&gt;
+&lt;p&gt;快捷键：Ctrl + k&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[百度](www.baidu.com)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;www.baidu.com&#34;&gt;百度&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h4 id=&#34;内部链接—文章链接：&#34;&gt;&lt;a href=&#34;#内部链接—文章链接：&#34; class=&#34;headerlink&#34; title=&#34;内部链接—文章链接：&#34;&gt;&lt;/a&gt;内部链接—文章链接：&lt;/h4&gt;&lt;p&gt;用于跳转到文章的其他部分，格式：&lt;/p&gt;
+&lt;p&gt;[提示文字](#标题)&lt;/p&gt;
+&lt;p&gt;快捷键：Ctrl + k&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[跳转到开头](#Typora教程)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#Typora教程&#34;&gt;跳转到开头&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h4 id=&#34;自动链接：&#34;&gt;&lt;a href=&#34;#自动链接：&#34; class=&#34;headerlink&#34; title=&#34;自动链接：&#34;&gt;&lt;/a&gt;自动链接：&lt;/h4&gt;&lt;p&gt;使用&amp;lt;&amp;gt;包裹任意 URL 或者邮箱，都会被转化为超链接&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;http://www.baidu.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.baidu.com&#34;&gt;http://www.baidu.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;上下标：&#34;&gt;&lt;a href=&#34;#上下标：&#34; class=&#34;headerlink&#34; title=&#34;上下标：&#34;&gt;&lt;/a&gt;上下标：&lt;/h3&gt;&lt;p&gt;用 ^ 来生成上标，用 ~ 来生成小标：&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;O~2~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;O~2~ ( 博客中无法显示，Typora中正常显示 )&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;V^3^&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;v^3^ ( Typora中正常显示 )&lt;/p&gt;
+&lt;h3 id=&#34;引用：&#34;&gt;&lt;a href=&#34;#引用：&#34; class=&#34;headerlink&#34; title=&#34;引用：&#34;&gt;&lt;/a&gt;引用：&lt;/h3&gt;&lt;p&gt;快捷键：Ctrl + shift + q 或 一级引用：&amp;gt;，二级引用：&amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;使用 &amp;gt; 时后面需要跟空格，同时引用只有在一行的开头才能使用。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 一级引用&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一级引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt;&amp;gt; 二级引用&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二级引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt; 一级 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;gt; 二级&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;gt; 博客教程&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一级&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二级&lt;/p&gt;
+&lt;p&gt;博客教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;表情符：&#34;&gt;&lt;a href=&#34;#表情符：&#34; class=&#34;headerlink&#34; title=&#34;表情符：&#34;&gt;&lt;/a&gt;表情符：&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/wangjs-jacky/p/12011208.html&#34;&gt;Typora Emoji图表大全&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;p&gt;: + : 标签名称 或 Win + ;&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;:smile: :heart: :100:&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;:smile: :heart: :100: ( 博客无法显示，Typora正常显示 )&lt;/p&gt;
+&lt;h3 id=&#34;分隔符：&#34;&gt;&lt;a href=&#34;#分隔符：&#34; class=&#34;headerlink&#34; title=&#34;分隔符：&#34;&gt;&lt;/a&gt;分隔符：&lt;/h3&gt;&lt;p&gt;使用方法：&lt;/p&gt;
+&lt;p&gt;*** + 回车&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;***回车&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;公式：&#34;&gt;&lt;a href=&#34;#公式：&#34; class=&#34;headerlink&#34; title=&#34;公式：&#34;&gt;&lt;/a&gt;公式：&lt;/h3&gt;&lt;p&gt;使用方法与 LaTex 语法差不多，都是用两个 $ 来容纳公式表达式。&lt;/p&gt;
+&lt;p&gt;Typora还支持公式块，使用两个 $$ 来容纳公式表达式，快捷键为：Ctrl + shift + m&lt;/p&gt;
+&lt;p&gt;因为 Typora 的公式使用方法与 LaTex 的使用方法相差不大，可以移步到我的另一篇文章查看常用公式表达方法。&lt;a href=&#34;https://wanjiuzuiye.github.io/2024/04/02/LaTex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/&#34;&gt;LaTex常用公式表示方法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\$ \frac{a}{b} \div \frac{c}{d} \$&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.798ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;6.435ex&#34; height=&#34;2.397ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -706.5 2844.2 1059.3&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mfrac&#34;&gt;&lt;g data-mml-node=&#34;mi&#34; transform=&#34;translate(220,394) scale(0.707)&#34;&gt;&lt;path data-c=&#34;1D44E&#34; d=&#34;M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&#34;mi&#34; transform=&#34;translate(255.4,-345) scale(0.707)&#34;&gt;&lt;path data-c=&#34;1D44F&#34; d=&#34;M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;rect width=&#34;574.1&#34; height=&#34;60&#34; x=&#34;120&#34; y=&#34;220&#34;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;g data-mml-node=&#34;mo&#34; transform=&#34;translate(1036.3,0)&#34;&gt;&lt;path data-c=&#34;F7&#34; d=&#34;M318 466Q318 500 339 518T386 537Q418 537 438 517T458 466Q458 438 440 417T388 396Q355 396 337 417T318 466ZM56 237T56 250T70 270H706Q721 262 721 250T706 230H70Q56 237 56 250ZM318 34Q318 68 339 86T386 105Q418 105 438 85T458 34Q458 6 440 -15T388 -36Q355 -36 337 -15T318 34Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&#34;mfrac&#34; transform=&#34;translate(2036.5,0)&#34;&gt;&lt;g data-mml-node=&#34;mi&#34; transform=&#34;translate(250.8,394) scale(0.707)&#34;&gt;&lt;path data-c=&#34;1D450&#34; d=&#34;M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&#34;mi&#34; transform=&#34;translate(220,-345) scale(0.707)&#34;&gt;&lt;path data-c=&#34;1D451&#34; d=&#34;M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;rect width=&#34;567.7&#34; height=&#34;60&#34; x=&#34;120&#34; y=&#34;220&#34;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;&lt;/p&gt;
+&lt;h3 id=&#34;参考博客：&#34;&gt;&lt;a href=&#34;#参考博客：&#34; class=&#34;headerlink&#34; title=&#34;参考博客：&#34;&gt;&lt;/a&gt;参考博客：&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/m0_62648611/article/details/133713273&#34;&gt;史上最全Typora教程——程序员必学软件之一&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

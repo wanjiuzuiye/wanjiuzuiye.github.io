@@ -4,21 +4,25 @@
     <title>挽酒醉夜 • Posts by &#34;hexo&#34; tag</title>
     <link href="https://wanjiuzuiye.github.io" />
     <updated>2024-04-04T03:37:20.000Z</updated>
-    <category term="游记" />
-    <category term="暑假" />
     <category term="Hexo" />
     <category term="LaTex" />
+    <category term="游记" />
+    <category term="暑假" />
+    <category term="butterfly主题" />
+    <category term="扩展标签" />
     <category term="hexo" />
     <category term="博客" />
+    <category term="Typora" />
+    <category term="写作" />
     <entry>
-        <id>https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
-        <title>hexo常用指令</title>
-        <link rel="alternate" href="https://wanjiuzuiye.github.io/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+        <id>https://wanjiuzuiye.github.io/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
+        <title>Hexo常用指令</title>
+        <link rel="alternate" href="https://wanjiuzuiye.github.io/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
         <content type="html">&lt;h2 id=&#34;博客写文章常用的-hexo-指令&#34;&gt;&lt;a href=&#34;#博客写文章常用的-hexo-指令&#34; class=&#34;headerlink&#34; title=&#34;博客写文章常用的 hexo 指令&#34;&gt;&lt;/a&gt;博客写文章常用的 hexo 指令&lt;/h2&gt;&lt;h3 id=&#34;hexo-init-指令&#34;&gt;&lt;a href=&#34;#hexo-init-指令&#34; class=&#34;headerlink&#34; title=&#34;hexo init 指令&#34;&gt;&lt;/a&gt;hexo init 指令&lt;/h3&gt;&lt;p&gt;该指令用于新建一个hexo框架的博客网站，若没有指定文件夹位置，默认在当前文件夹创建网站。&lt;/p&gt;
 &lt;p&gt;语法为：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hexo init [folder]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;指令运行后，会生成如下文件：&lt;/p&gt;
-&lt;img src=&#34;/2024/04/04/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_121450.png&#34; class=&#34;&#34;&gt;
+&lt;img src=&#34;/2024/04/04/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/2024-04-04_121450-1712292054782-1.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;模板文件：用来存放自定义的文章模版文件，每次写作可按照模板生成初始文章。&lt;/li&gt;
 &lt;li&gt;资源文件夹：用来存放页面文件和文章文件，包括标签、分类、文章、图片等资源。&lt;/li&gt;
